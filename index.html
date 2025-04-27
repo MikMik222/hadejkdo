@@ -2,68 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikuláš Mikeska | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Optional: Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  <header>
+  <!-- Toggle dark/light mode -->
+  <input type="checkbox" id="mode-toggle" hidden>
+  <label for="mode-toggle" class="mode-switch" aria-label="Toggle dark/light mode">		
+    <div class="blockcopy">☀️</div>
+    <div class="blockcopy">🌙</div>
+    <div class="ball"></div>
+  </label>
+  
+  <!-- Decorative full-page div (could be used for backgrounds) -->
+  <div class="full-page-div"></div>
+
+  <!-- Page Content -->
+  <header class="fade-section">
     <div class="container">
       <h1>Welcome to My Website</h1>
     </div>
   </header>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:mikulas.mikeska3@seznam.cz">mikulas.mikeska3@seznam.cz</a></p>
-    </div>
-  </section>
-  
-  
-  <section id="code" class="section">
-    <div class="container">
-      <h2>My Code Examples</h2>
-      <p>Visit my GitHub profile: <a href="https://github.com/MikMik222" target="_blank">GitHub: MikMik222</a></p>
-    </div>
-  </section>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section fade-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi, I’m Mikuláš Mikeska, a passionate software enthusiast from Czechia. I enjoy coding, solving problems, and constantly learning new things in the world of technology.</p>
+      </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:mikulas.mikeska3@seznam.cz">mikulas.mikeska3@seznam.cz</a></p>
+      </div>
+    </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>User programs: MS Word, MS Excel, MS PowerPoint</li>
-        <li>Programming languages: Python, MySQL, C#, C</li>
-        <li>GIT</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Code Examples Section -->
+    <section id="code" class="section fade-section">
+      <div class="container">
+        <h2>My Code Examples</h2>
+        <p>Check out my projects and code snippets on my GitHub: 
+          <a href="https://github.com/MikMik222" target="_blank" rel="noopener noreferrer">GitHub: MikMik222</a>
+        </p>
+      </div>
+    </section>
 
-  <section id="languages" class="section">
-    <div class="container">
-      <h2>Languages</h2>
-      <p>English</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>User programs:</strong> MS Word, MS Excel, MS PowerPoint</li>
+          <li><strong>Programming languages:</strong> Python, MySQL, C#, C</li>
+          <li><strong>Version control:</strong> Git</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-
-
-  <section id="hobbies" class="section">
-    <div class="container">
-      <h2>Hobbies</h2>
-      <ul>
-        <li>Programming</li>
-        <li>Puzzles</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
+  <!-- Footer -->
+  <footer class="fade-section">
     <div class="container">
       <p>Thank you for visiting my website!</p>
     </div>
   </footer>
 </body>
 </html>
-
